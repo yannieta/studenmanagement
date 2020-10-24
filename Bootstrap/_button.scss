@@ -1,0 +1,253 @@
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  border: 0.1rem solid #0000;
+  background-image: none;
+  padding: 0.6em 1.2em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  &-round {
+    border-radius: 0.4rem;
+  }
+
+  &-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+
+    &.btn-shadow {
+      box-shadow: 0 0.3rem 0.5rem #ccc;
+    }
+
+    &:hover {
+      background-color: #e6e6e6;
+      border-color: #adadad;
+    }
+  }
+
+  &-danger {
+    color: #f1f1f1;
+    background-color: $danger;
+    border: 0.1rem solid $danger;
+
+    &.btn-shadow {
+      box-shadow: 0 0.3rem 0.5rem $danger;
+    }
+
+    &:hover {
+      background-color: darken($color: $danger, $amount: 10%);
+      border-color: darken($color: $danger, $amount: 10%);
+    }
+  }
+
+  &-primary {
+    color: #f1f1f1;
+    background-color: $primary;
+    border: 0.1rem solid $primary;
+
+    &.btn-shadow {
+      box-shadow: 0 0.3rem 0.5rem $primary;
+    }
+
+    &:hover {
+      background-color: darken($color: $primary, $amount: 10%);
+      border-color: darken($color: $primary, $amount: 10%);
+    }
+  }
+
+  &-success {
+    color: #f1f1f1;
+    background-color: $success;
+    border: 0.1rem solid $success;
+
+    &.btn-shadow {
+      box-shadow: 0 0.3rem 0.5rem $success;
+    }
+
+    &:hover {
+      background-color: darken($color: $success, $amount: 10%);
+      border-color: darken($color: $success, $amount: 10%);
+    }
+  }
+
+  &-info {
+    color: #f1f1f1;
+    background-color: $info;
+    border: 0.1rem solid $info;
+
+    &.btn-shadow {
+      box-shadow: 0 0.3rem 0.5rem $info;
+    }
+
+    &:hover {
+      background-color: darken($color: $info, $amount: 10%);
+      border-color: darken($color: $info, $amount: 10%);
+    }
+  }
+
+  &-warning {
+    color: #f1f1f1;
+    background-color: $warning;
+    border: 0.1rem solid $warning;
+
+    &.btn-shadow {
+      box-shadow: 0 0.3rem 0.5rem $warning;
+    }
+
+    &:hover {
+      background-color: darken($color: $warning, $amount: 10%);
+      border-color: darken($color: $warning, $amount: 10%);
+    }
+  }
+
+  &-secondary {
+    color: #f1f1f1;
+    background-color: $secondary;
+    border: 0.1rem solid $secondary;
+
+    &.btn-shadow {
+      box-shadow: 0 0.3rem 0.5rem $secondary;
+    }
+
+    &:hover {
+      background-color: darken($color: $secondary, $amount: 10%);
+      border-color: darken($color: $secondary, $amount: 10%);
+    }
+  }
+
+  &-light {
+    color: $secondary;
+    background-color: $light;
+    border: 0.1rem solid #ccc;
+
+    &.btn-shadow {
+      box-shadow: 0 0.3rem 0.5rem #ccc;
+    }
+
+    &:hover {
+      background-color: #e6e6e6;
+      border-color: #adadad;
+    }
+  }
+
+  &-dark {
+    color: #f1f1f1;
+    background-color: $dark;
+    border: 0.1rem solid $dark;
+
+    &.btn-shadow {
+      box-shadow: 0 0.3rem 0.5rem $dark;
+    }
+
+    &:hover {
+      background-color: darken($color: $dark, $amount: 10%);
+      border-color: darken($color: $dark, $amount: 10%);
+    }
+  }
+
+  &-block {
+    width: 100%;
+  }
+
+  &-xs {
+    padding: 0.1em 0.5em;
+  }
+
+  &-sm {
+    padding: 0.5em 1em;
+  }
+
+  &-lg {
+    padding: 1em 1.6em;
+  }
+}
+
+@media (max-width: 1199px) {
+  .btn {
+    &-block-xl {
+      width: 100%;
+    }
+
+    &-xs-xl {
+      padding: 0.1em 0.5em;
+    }
+
+    &-sm-xl {
+      padding: 0.5em 1em;
+    }
+
+    &-lg-xl {
+      padding: 1em 1.6em;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .btn {
+    &-block-lg {
+      width: 100%;
+    }
+
+    &-xs-lg {
+      padding: 0.1em 0.5em;
+    }
+
+    &-sm-lg {
+      padding: 0.5em 1em;
+    }
+
+    &-lg-lg {
+      padding: 1em 1.6em;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .btn {
+    &-block-md {
+      width: 100%;
+    }
+
+    &-xs-md {
+      padding: 0.1em 0.5em;
+    }
+
+    &-sm-md {
+      padding: 0.5em 1em;
+    }
+
+    &-lg-md {
+      padding: 1em 1.6em;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .btn {
+    &-block-sm {
+      width: 100%;
+    }
+
+    &-xs-sm {
+      padding: 0.1em 0.5em;
+    }
+
+    &-sm-sm {
+      padding: 0.5em 1em;
+    }
+
+    &-lg-sm {
+      padding: 1em 1.6em;
+    }
+  }
+}

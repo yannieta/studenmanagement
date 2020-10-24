@@ -1,0 +1,148 @@
+.nav {
+  &__burger-button {
+    --background: ;
+    cursor: pointer;
+
+    [class*="burger-row"] {
+      width: 2.2rem;
+      padding: 0.03rem 0;
+      background-color: var(--background);
+      margin: 0.6rem 0;
+      border-radius: 0.3rem;
+      transition: transform 0.5s;
+    }
+  }
+
+  &__burger-button-clicked {
+    .burger-row-2 {
+      display: none;
+    }
+
+    .burger-row-1 {
+      transform: rotate(45deg) translate(0.2rem, 0.3rem);
+    }
+
+    .burger-row-3 {
+      transform: rotate(-45deg) translate(0.2rem, -0.3rem);
+    }
+  }
+}
+
+.text {
+  &-right {
+    text-align: right;
+  }
+
+  &-center {
+    text-align: center;
+  }
+
+  &-upper {
+    text-transform: uppercase;
+  }
+
+  &-justify {
+    text-align: justify;
+  }
+
+  &-capitalize {
+    text-transform: capitalize;
+  }
+}
+
+
+@media (max-width: 1199px) {
+  .text {
+    &-right-xl {
+      text-align: right;
+    }
+
+    &-center-xl {
+      text-align: center;
+    }
+
+    &-upper-xl {
+      text-transform: uppercase;
+    }
+
+    &-justify-xl {
+      text-align: justify;
+    }
+
+    &-capitalize-xl {
+      text-transform: capitalize;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .text {
+    &-right-lg {
+      text-align: right;
+    }
+
+    &-center-lg {
+      text-align: center;
+    }
+
+    &-upper-lg {
+      text-transform: uppercase;
+    }
+
+    &-justify-lg {
+      text-align: justify;
+    }
+
+    &-capitalize-lg {
+      text-transform: capitalize;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .text {
+    &-right-md {
+      text-align: right;
+    }
+
+    &-center-md {
+      text-align: center;
+    }
+
+    &-upper-md {
+      text-transform: uppercase;
+    }
+
+    &-justify-md {
+      text-align: justify;
+    }
+
+    &-capitalize-md {
+      text-transform: capitalize;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .text {
+    &-right-sm {
+      text-align: right;
+    }
+
+    &-center-sm {
+      text-align: center;
+    }
+
+    &-upper-sm {
+      text-transform: uppercase;
+    }
+
+    &-justify-sm {
+      text-align: justify;
+    }
+
+    &-capitalize-sm {
+      text-transform: capitalize;
+    }
+  }
+}

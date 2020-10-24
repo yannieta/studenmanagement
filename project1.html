@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+    <title>Calculator</title>
+</head>
+
+<body>
+    <h1 class="text-center mt-15 mb-15">Quản lý sinh viên</h1>
+    <div class="form">
+        <p class="desc">Thêm mới sinh viên</p>
+        <table>
+            <tr>
+                <th>Họ và tên</th>
+                <td><input id="name" type="text" class="form-control w-10" required/></td>
+            </tr>
+            <tr>
+                <th>Tuổi</th>
+                <td><input id="age" type="text" class="form-control w-10" required/></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="text-center p-10">
+                    <button class="add btn btn-primary btn-round btn-sm" onclick="addInfo()">Add</button>
+                    <button class="update btn btn-info btn-round btn-sm">Update</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <table class="show-info w-10">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Edit</th>
+            </tr>
+        </thead>
+
+        <tbody id="tbody"></tbody>
+    </table>
+    <script src="./projs.js"></script>
+</body>
+
+</html>

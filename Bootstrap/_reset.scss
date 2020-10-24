@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+ul,
+li {
+  list-style: none;
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: transform 0.5s;
+  font-family: inherit;
+  font-size: inherit;
+  background: none;
+  border-radius: 0;
+
+  &:active {
+    transform: scale(0.8);
+  }
+}
+
+img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+span {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.5s;
+  color: inherit;
+  display: inline-block;
+}
+
+i {
+  font-size: inherit;
+  font-weight: inherit;
+  display: inline-block;
+}
+
+table {
+  border-collapse: collapse;
+}
